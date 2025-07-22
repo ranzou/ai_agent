@@ -48,7 +48,7 @@ if verbose:
     print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
     print(f"Response tokens: {response.usage_metadata.candidates_token_count}")
 if not response.function_calls:
-    print(response.txt)
+    print(response.text)
 
 function_responses = []
 for function_call_part in response.function_calls:
